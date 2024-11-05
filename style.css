@@ -47,58 +47,16 @@ body {
     cursor: pointer;
 }
 
-/* Main Content */
+/* Link Boxes */
 .main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-.title {
-    font-size: 64px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-    background-color: #333;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-size: 18px;
-}
-
-.search-bar input {
-    background: none;
-    border: none;
-    outline: none;
-    color: #fff;
-    font-size: 18px;
-    margin-right: 10px;
-}
-
-.search-bar button {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-/* Footer */
-.footer {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
     width: 100%;
-    padding: 20px;
-    background-color: #1a1a1a;
+    max-width: 1200px;
 }
 
-.footer a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-}
+.link-box {
+    background-color: #1e1e1e;
+    border-radius
